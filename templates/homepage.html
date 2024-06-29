@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Natação Master
+{% endblock %}
+
+{% block body %}
+
+{% for home in object_list %}
+<section class="parallax min-h-screen bg-gray-800 bg-opacity-60 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat">
+        <h2 id="text-titulo">Natação Master</h2>
+    </div>
+</section>
+
+<section class="sec bg-gray-800">
+    <div class="heading-home">
+        <h2>{{ home.titulo }}</h2>
+    <p>
+        {{ home.subtitulo }}
+    </div>
+
+    </p>
+</section>
+
+<script src="{% static 'script/text.js' %}">
+</script>
+
+
+{% endfor %}
+
+
+
+{% endblock %}

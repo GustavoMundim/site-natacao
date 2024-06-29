@@ -1,0 +1,15 @@
+{% load static %}
+
+<header>
+
+    <a href="{% url 'site-natacao:homepage' %}" class="logo hover-button"><img src="{% static 'images/logo.png' %}"></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navigation navegation-pages">
+        <a class="text-show {% if active_page == 'homepage' %} active {% endif %}" href="{% url 'site-natacao:homepage' %}" onclick="Active(this)">Inicio<span></span></a>
+        <a class="text-show {% if active_page == 'portfolio' %} active {% endif %}" href="{% url 'site-natacao:portfolio' %}" onclick='Active(this)'>Portfolio<span></span></a>
+        <a class="text-show {% if active_page == 'inscricao' %} active {% endif %}" href="{% url 'site-natacao:inscricao' %}" onclick="Active(this)">Inscrição<span></span></a>
+    </nav>
+
+</header>
+
+

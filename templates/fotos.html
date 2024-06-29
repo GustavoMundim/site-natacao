@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/fotos.css' %}">
+{% endblock %}
+
+{% block body %}
+<section id="header-portfolio">
+    <img src="{{ foto.foto.url }}" alt="" style="width:100">
+    <div class="overlay-portfolio">
+    </div>
+</section>
+
+
+<section class="portfolio-text mt-20">
+    <h1>{{ foto.descricao }}</h1>
+    <div class="portfolio-data">
+        Data Postagem: {{ foto.data }}
+    </div>
+</section>
+
+
+
+
+<script src="{% static 'script/active-text.js' %}"></script>
+{% endblock %}
+
+
+{% block footer %}
+
+{% endblock %}

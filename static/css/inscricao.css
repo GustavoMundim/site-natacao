@@ -1,0 +1,80 @@
+.sec-3{
+    min-height: 100vh;
+}
+
+.wallpaper-inscricao{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../wallpaper/inscricao.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+
+
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: transform 2s ease;
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.11);
+}
+  
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .container {
+      padding: 100%;
+    }
+    input[type=submit] {
+      margin-top: 5%;
+      width: 80%;
+
+    }
+
+    
+  }
+
+

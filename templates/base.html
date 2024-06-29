@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel='stylesheet' href="{% static 'script/text.js' %}"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{% static 'script/anim.js' %}"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+{% include 'navbar.html' %}
+{% block body %}
+{% endblock %}
+{% block footer %}
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright 2024 &copy; Desenvolvido por  Gustavo Mundim | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+{% endblock %}
+</body>
+<script src="{% static 'script/mobile.js' %}"></script>
+<script src="text.js"></script>
+<script src="{% static 'script/anim.js' %}"></script>
+<script src="{% static 'script/settings_window.js' %}"></script>
+</html>

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+{% endblock %}
+
+{% block body %}
+<section class="section-portfolio">
+    <div class="texto-portfolio-initial">
+        <h1 id="text-portfolio">Portfolio</h1>
+    </div>
+</section>
+<div class="main">
+    <ul class="cards">
+    {% for foto in object_list %}
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img class="image-adjust" src="{{ foto.foto.url }}"></div>
+          <div class="card_content">
+            <h2 class="card_title">Data postagem: {{ foto.data }}</h2>
+            <p class="card_text">{{ foto.descricao | slice:100}}...</p>
+            <a href="{% url 'site-natacao:picture' foto.id %}">
+              <button class="btn card_btn">Leia mais</button>
+            </a>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+</div>
+<script src="{% static 'script/active-text.js' %}"></script>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'admin/base.html' %}
+
+{% load static %}
+
+{% block branding %}
+<h1>Área Administrativa</h1>
+{% endblock %}
+
+
+{% block nav-global %}
+    <a class="gerar-excel" href="{% url 'site-natacao:planilha' %}">Gerar Planilha</a>
+{% endblock %}
+
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,81 @@
+body{
+    min-height: 100vh;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../wallpaper/fundo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+#text-titulo {
+    ruby-position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 1px 2px 5px #03a9f4;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.5;
+    visibility: hidden;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: #323946
+  }
+  
+  .footer-text p {
+    color: #fff
+  }
+
+
+.sec {
+    position:relative;
+    background: #020024;
+    padding: 30px 100px;
+}
+
+.sec h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px black
+}
+
+.heading-home{
+    visibility: hidden;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+    text-shadow: 1px 1px 5px black
+}
+
+
+@media screen and (max-width: 730px) {
+    #text-titulo{
+    font-size: 50px;
+}
+    .footer-dev{
+        font-size: 5px
+    }
+}
+
+
